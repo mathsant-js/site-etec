@@ -12,24 +12,27 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-danger">
         <div class="container">
-            <a class="navbar-brand text-light" href="#">Etec Zona Leste</a>
+            <a class="navbar-brand text-light" href="#"><img src="{{ asset('storage/imgs/etec_zona_leste.png') }}"
+                    height="70" width="250" alt="teste"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+                    <li class="nav-item ms-sm-3 ms-3">
+                        <a class="nav-link active text-light" aria-current="page" href="#">
+                            Home
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="#">Cursos</a>
+                        <a class="nav-link text-light" href="{{ route('cursos') }}">Cursos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="#">Departamentos</a>
+                        <a class="nav-link text-light" href="{{ route('departamentos') }}">Departamentos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="#">Contato</a>
+                        <a class="nav-link text-light" href="{{ route('contatos') }}">Contato</a>
                     </li>
                 </ul>
             </div>
@@ -39,13 +42,13 @@
         <div id="carouselExample" class="carousel slide">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="https://placehold.co/400x200" class="d-block w-100" alt="...">
+                    <img src="{{ asset('storage/imgs/download.jpg') }}" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="https://placehold.co/400x200" class="d-block w-100" alt="...">
+                    <img src="{{ asset('storage/imgs/download.jpg') }}" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
+                    <img src="{{ asset('storage/imgs/download.jpg') }}" class="d-block w-100" alt="...">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -63,7 +66,7 @@
                 <div class="accordion" id="accordionExample">
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            <button class="accordion-button btn btn-danger" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                 A Nossa História
                             </button>
@@ -99,7 +102,7 @@
                 <div class="accordion" id="accordionExample">
                     <div class="accordion-item">
                         <h2 class="accordion-header">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            <button class="accordion-button btn btn-danger" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
                                 O que a Etec pode fazer pelo seu futuro
                             </button>

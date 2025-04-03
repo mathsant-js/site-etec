@@ -6,7 +6,7 @@ use App\Http\Controllers\DepartamentoController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', [HomeController::class, 'index']);
-Route::get('/cursos', [CursosController::class, 'index']);
-Route::get('/departamentos', [DepartamentoController::class, 'index']);
-Route::get('/contatos', [ContatoController::class, 'index']);
+Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/cursos', [CursosController::class, 'index'])->name('cursos');
+Route::get('/departamentos', [DepartamentoController::class, 'index'])->name('departamentos');
+Route::get('/contatos', [ContatoController::class, 'index'])->name('contatos');
